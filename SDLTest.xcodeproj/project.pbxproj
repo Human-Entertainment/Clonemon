@@ -8,21 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		FC3561482354829F009D1E6D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FC3561472354829F009D1E6D /* main.c */; };
+		FCEB0E112354992800C0D580 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC09683B235494BF007FBF09 /* SDL2.framework */; };
+		FCEB0E122354992800C0D580 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC09683B235494BF007FBF09 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		FC3561422354829F009D1E6D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			dstPath = /usr/share/man/man1;
 			dstSubfolderSpec = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		FCEB0E132354992800C0D580 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FCEB0E122354992800C0D580 /* SDL2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FC09683B235494BF007FBF09 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
 		FC3561442354829F009D1E6D /* SDLTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SDLTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3561472354829F009D1E6D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCEB0E112354992800C0D580 /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +58,7 @@
 			children = (
 				FC3561462354829F009D1E6D /* SDLTest */,
 				FC3561452354829F009D1E6D /* Products */,
+				FC35615423548731009D1E6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +78,14 @@
 			path = SDLTest;
 			sourceTree = "<group>";
 		};
+		FC35615423548731009D1E6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC09683B235494BF007FBF09 /* SDL2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -72,6 +96,7 @@
 				FC3561402354829F009D1E6D /* Sources */,
 				FC3561412354829F009D1E6D /* Frameworks */,
 				FC3561422354829F009D1E6D /* CopyFiles */,
+				FCEB0E132354992800C0D580 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,9 +263,21 @@
 		FC35614C2354829F009D1E6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2D7T23VV7R;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/sdl2/2.0.10/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.inuk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -248,9 +285,20 @@
 		FC35614D2354829F009D1E6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2D7T23VV7R;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/sdl2/2.0.10/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.inuk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
