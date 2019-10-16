@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC4BD3CF23574C1600229B8E /* fighting.c in Sources */ = {isa = PBXBuildFile; fileRef = FC4BD3CE23574C1600229B8E /* fighting.c */; };
 		FC7BB8FF23566AED001B4268 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FC7BB8FE23566AED001B4268 /* main.c */; };
 		FC7BB90323566B44001B4268 /* Player.c in Sources */ = {isa = PBXBuildFile; fileRef = FC7BB90223566B44001B4268 /* Player.c */; };
 		FCEB0E112354992800C0D580 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC09683B235494BF007FBF09 /* SDL2.framework */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		FC09683B235494BF007FBF09 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
 		FC3561442354829F009D1E6D /* Clonémon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Clonémon"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC4BD3CE23574C1600229B8E /* fighting.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fighting.c; sourceTree = "<group>"; };
 		FC7BB8FE23566AED001B4268 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		FC7BB90123566B44001B4268 /* Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		FC7BB90223566B44001B4268 /* Player.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Player.c; sourceTree = "<group>"; };
@@ -81,11 +83,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FC4BD3CD23574C1600229B8E /* Fighting */ = {
+			isa = PBXGroup;
+			children = (
+				FC4BD3CE23574C1600229B8E /* fighting.c */,
+			);
+			path = Fighting;
+			sourceTree = "<group>";
+		};
 		FC7BB8FD23566AED001B4268 /* src */ = {
 			isa = PBXGroup;
 			children = (
 				FC7BB90023566B23001B4268 /* Player */,
 				FC7BB8FE23566AED001B4268 /* main.c */,
+				FC4BD3CD23574C1600229B8E /* Fighting */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -159,6 +170,7 @@
 			files = (
 				FC7BB90323566B44001B4268 /* Player.c in Sources */,
 				FC7BB8FF23566AED001B4268 /* main.c in Sources */,
+				FC4BD3CF23574C1600229B8E /* fighting.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
