@@ -10,6 +10,7 @@ This is a clone game
 ### Graphics:
 We're not yet quite sure which graphics codec we're going to use, but it's likely png, it looks like we have to source our own regardless: https://wiki.libsdl.org/SDL_PixelFormatEnum
 - Spriteart
+
 Optional:
 - [Aceprite]
 
