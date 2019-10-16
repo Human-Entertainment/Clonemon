@@ -1,18 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include <SDL2/SDL.h>
+#include "Player/Player.h"
 
-enum PlayerNumber {one,two};
-enum PlayerDirection {up, down, still};
 typedef enum PlayerDirection BallYDirection;
 typedef enum ballXDirection {left, right} BallXDirection;
 
-typedef struct player {
-    SDL_Rect bat;
-    enum PlayerNumber player;
-    enum PlayerDirection direction;
-} Player;
+
 
 typedef enum state{playerRightWon, playerLeftWon, running} State;
 

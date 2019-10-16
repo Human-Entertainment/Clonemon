@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FC3561482354829F009D1E6D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FC3561472354829F009D1E6D /* main.c */; };
+		FC7BB8FF23566AED001B4268 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FC7BB8FE23566AED001B4268 /* main.c */; };
+		FC7BB90323566B44001B4268 /* Player.c in Sources */ = {isa = PBXBuildFile; fileRef = FC7BB90223566B44001B4268 /* Player.c */; };
 		FCEB0E112354992800C0D580 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC09683B235494BF007FBF09 /* SDL2.framework */; };
 		FCEB0E122354992800C0D580 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC09683B235494BF007FBF09 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -37,8 +38,10 @@
 
 /* Begin PBXFileReference section */
 		FC09683B235494BF007FBF09 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
-		FC3561442354829F009D1E6D /* SDLTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SDLTest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC3561472354829F009D1E6D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		FC3561442354829F009D1E6D /* Clonémon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Clonémon"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC7BB8FE23566AED001B4268 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		FC7BB90123566B44001B4268 /* Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		FC7BB90223566B44001B4268 /* Player.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Player.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +59,7 @@
 		FC35613B2354829F009D1E6D = {
 			isa = PBXGroup;
 			children = (
-				FC3561462354829F009D1E6D /* SDLTest */,
+				FC7BB8FD23566AED001B4268 /* src */,
 				FC3561452354829F009D1E6D /* Products */,
 				FC35615423548731009D1E6D /* Frameworks */,
 			);
@@ -65,17 +68,9 @@
 		FC3561452354829F009D1E6D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FC3561442354829F009D1E6D /* SDLTest */,
+				FC3561442354829F009D1E6D /* Clonémon */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		FC3561462354829F009D1E6D /* SDLTest */ = {
-			isa = PBXGroup;
-			children = (
-				FC3561472354829F009D1E6D /* main.c */,
-			);
-			path = SDLTest;
 			sourceTree = "<group>";
 		};
 		FC35615423548731009D1E6D /* Frameworks */ = {
@@ -86,12 +81,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FC7BB8FD23566AED001B4268 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				FC7BB90023566B23001B4268 /* Player */,
+				FC7BB8FE23566AED001B4268 /* main.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		FC7BB90023566B23001B4268 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				FC7BB90123566B44001B4268 /* Player.h */,
+				FC7BB90223566B44001B4268 /* Player.c */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FC3561432354829F009D1E6D /* SDLTest */ = {
+		FC3561432354829F009D1E6D /* Clonémon */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC35614B2354829F009D1E6D /* Build configuration list for PBXNativeTarget "SDLTest" */;
+			buildConfigurationList = FC35614B2354829F009D1E6D /* Build configuration list for PBXNativeTarget "Clonémon" */;
 			buildPhases = (
 				FC3561402354829F009D1E6D /* Sources */,
 				FC3561412354829F009D1E6D /* Frameworks */,
@@ -102,9 +115,9 @@
 			);
 			dependencies = (
 			);
-			name = SDLTest;
+			name = "Clonémon";
 			productName = SDLTest;
-			productReference = FC3561442354829F009D1E6D /* SDLTest */;
+			productReference = FC3561442354829F009D1E6D /* Clonémon */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -121,7 +134,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FC35613F2354829F009D1E6D /* Build configuration list for PBXProject "SDLTest" */;
+			buildConfigurationList = FC35613F2354829F009D1E6D /* Build configuration list for PBXProject "Clonémon" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -134,7 +147,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FC3561432354829F009D1E6D /* SDLTest */,
+				FC3561432354829F009D1E6D /* Clonémon */,
 			);
 		};
 /* End PBXProject section */
@@ -144,7 +157,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC3561482354829F009D1E6D /* main.c in Sources */,
+				FC7BB90323566B44001B4268 /* Player.c in Sources */,
+				FC7BB8FF23566AED001B4268 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +320,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FC35613F2354829F009D1E6D /* Build configuration list for PBXProject "SDLTest" */ = {
+		FC35613F2354829F009D1E6D /* Build configuration list for PBXProject "Clonémon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FC3561492354829F009D1E6D /* Debug */,
@@ -315,7 +329,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FC35614B2354829F009D1E6D /* Build configuration list for PBXNativeTarget "SDLTest" */ = {
+		FC35614B2354829F009D1E6D /* Build configuration list for PBXNativeTarget "Clonémon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FC35614C2354829F009D1E6D /* Debug */,
