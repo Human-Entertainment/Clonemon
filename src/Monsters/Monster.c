@@ -10,4 +10,9 @@
 
 MonsterType green;
 
-MonsterFamily tingleMon = {.type = &green, .baseDefence = 5, .baseHP = 5, .name = "Tinglemon"};
+MonsterFamily tingleMon = {.type = &green,
+                           .baseDefence = 5,
+                           .baseHP = 5,
+                           .name = "Tinglemon"};
+
+Attack skratch = {.type = &green, .attack = 2, .name = "Skratch"};

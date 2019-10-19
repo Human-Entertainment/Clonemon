@@ -12,6 +12,7 @@
 //#include "Player.h"
 #include "Monster.h"
 
-void attack(Attack attack, Monster attacker, Monster attackee);
+/// Reduces the HP of monsther getting attacked appropriate to type and attack stats.
+int attackNow(const Attack* attack, Monster* attackee);
 
 #endif /* Fighting_h */
