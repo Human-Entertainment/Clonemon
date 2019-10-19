@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FC33736323576629009C0856 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FC33736223576629009C0856 /* main.c */; };
 		FC33736923576663009C0856 /* fight-cli.c in Sources */ = {isa = PBXBuildFile; fileRef = FC33736823576663009C0856 /* fight-cli.c */; };
 		FC33736F235835D4009C0856 /* Monster.c in Sources */ = {isa = PBXBuildFile; fileRef = FC33736E235835D4009C0856 /* Monster.c */; };
 		FC337370235835D4009C0856 /* Monster.c in Sources */ = {isa = PBXBuildFile; fileRef = FC33736E235835D4009C0856 /* Monster.c */; };
@@ -253,7 +252,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC33736323576629009C0856 /* main.c in Sources */,
 				FC337370235835D4009C0856 /* Monster.c in Sources */,
 				FC33736923576663009C0856 /* fight-cli.c in Sources */,
 				FC337372235838DC009C0856 /* fighting.c in Sources */,
