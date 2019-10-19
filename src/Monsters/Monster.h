@@ -35,7 +35,7 @@ typedef struct monsterFamily{
 } MonsterFamily;
 
 typedef struct monster {
-    MonsterFamily family;
+    MonsterFamily* family;
     Attack* attacks [4];
     int HP;
     char* name;

@@ -15,4 +15,4 @@ MonsterFamily tingleMon = {.type = &green,
                            .baseHP = 5,
                            .name = "Tinglemon"};
 
-Attack skratch = {.type = &green, .attack = 2};
+Attack skratch = {.type = &green, .attack = 2, .name = "Skratch"};
