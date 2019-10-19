@@ -21,14 +21,14 @@ typedef struct monsterType {
 
 /// The attack type
 typedef struct attack{
-    MonsterType type;
+    MonsterType* type;
     int attack;
+    char* name;
 } Attack;
 
 /// The type of the monster
 typedef struct monsterFamily{
     MonsterType* type;
-    Attack* attacks [4];
     int baseDefence;
     int baseHP;
     char* name;
@@ -36,12 +36,14 @@ typedef struct monsterFamily{
 
 typedef struct monster {
     MonsterFamily family;
+    Attack* attacks [4];
+    int HP;
     char* name;
 } Monster;
 
 MonsterFamily tingleMon;
 
-
+Attack skratch;
 
 
 #endif /* Monster_h */
