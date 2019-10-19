@@ -11,7 +11,11 @@
 
 #include <stdio.h>
 
-typedef enum type{rock, paper, scissor} Type;
+typedef struct type{
+    struct type* weak;
+    struct type* strong;
+    char* name;
+} Type;
 
 /// The attack type
 typedef struct attack{
