@@ -18,7 +18,7 @@ void game(Monster* you, Monster* oponent){
     int choice;
     
     printf("You: %s HP: %d\n", you->name, you->HP);
-    printf("Oponent: %s HP: %d\n", oponent->name, you->HP);
+    printf("Oponent: %s HP: %d\n", oponent->name, oponent->HP);
     printf("Actions:\n");
     printf("1: Attack\n");
     printf("Choice: ");
@@ -35,7 +35,7 @@ void game(Monster* you, Monster* oponent){
 
         printf("Choice: ");
         scanf("%d", &choice);
-        attackNow(you->attacks[choice-1], oponent);
+        oponent->HP = attackNow(you->attacks[choice-1], oponent);
     } else {
         printf("I asked you to make a choice\n");
         
