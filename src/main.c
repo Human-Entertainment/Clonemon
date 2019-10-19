@@ -88,6 +88,8 @@ void moveBall(Ball *ball, const Player playerRight, const Player playerLeft){
     }
 }
 
+
+
 int main(int argc, char *argv[])
 {
     SDL_Window *window;

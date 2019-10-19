@@ -7,13 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FC7BB8FF23566AED001B4268 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FC7BB8FE23566AED001B4268 /* main.c */; };
-		FC7BB90323566B44001B4268 /* Player.c in Sources */ = {isa = PBXBuildFile; fileRef = FC7BB90223566B44001B4268 /* Player.c */; };
+		FC33736923576663009C0856 /* fight-cli.c in Sources */ = {isa = PBXBuildFile; fileRef = FC33736823576663009C0856 /* fight-cli.c */; };
+		FC33736F235835D4009C0856 /* Monster.c in Sources */ = {isa = PBXBuildFile; fileRef = FC33736E235835D4009C0856 /* Monster.c */; };
+		FC337370235835D4009C0856 /* Monster.c in Sources */ = {isa = PBXBuildFile; fileRef = FC33736E235835D4009C0856 /* Monster.c */; };
+		FC33737123583806009C0856 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FC7BB8FE23566AED001B4268 /* main.c */; };
+		FC337372235838DC009C0856 /* fighting.c in Sources */ = {isa = PBXBuildFile; fileRef = FC4BD3CE23574C1600229B8E /* fighting.c */; };
+		FC33737523583921009C0856 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC33737423583921009C0856 /* SDL2.framework */; };
+		FC33737623583921009C0856 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC33737423583921009C0856 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FCEB0E112354992800C0D580 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC09683B235494BF007FBF09 /* SDL2.framework */; };
 		FCEB0E122354992800C0D580 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC09683B235494BF007FBF09 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		FC33735E23576629009C0856 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		FC33737723583921009C0856 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FC33737623583921009C0856 /* SDL2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FC3561422354829F009D1E6D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,13 +63,29 @@
 
 /* Begin PBXFileReference section */
 		FC09683B235494BF007FBF09 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		FC33735B23576607009C0856 /* Fighting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fighting.h; sourceTree = "<group>"; };
+		FC33736023576629009C0856 /* FightTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FightTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC33736223576629009C0856 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		FC33736823576663009C0856 /* fight-cli.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "fight-cli.c"; sourceTree = "<group>"; };
+		FC33736D235835D4009C0856 /* Monster.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Monster.h; sourceTree = "<group>"; };
+		FC33736E235835D4009C0856 /* Monster.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Monster.c; sourceTree = "<group>"; };
+		FC33737423583921009C0856 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2.framework; sourceTree = "<group>"; };
 		FC3561442354829F009D1E6D /* Clonémon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Clonémon"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC4BD3CE23574C1600229B8E /* fighting.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fighting.c; sourceTree = "<group>"; };
 		FC7BB8FE23566AED001B4268 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		FC7BB90123566B44001B4268 /* Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		FC7BB90223566B44001B4268 /* Player.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Player.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FC33735D23576629009C0856 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC33737523583921009C0856 /* SDL2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FC3561412354829F009D1E6D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,10 +97,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC33736123576629009C0856 /* FightTest */ = {
+			isa = PBXGroup;
+			children = (
+				FC33736223576629009C0856 /* main.c */,
+			);
+			path = FightTest;
+			sourceTree = "<group>";
+		};
+		FC33736C235835BD009C0856 /* Monsters */ = {
+			isa = PBXGroup;
+			children = (
+				FC33736D235835D4009C0856 /* Monster.h */,
+				FC33736E235835D4009C0856 /* Monster.c */,
+			);
+			path = Monsters;
+			sourceTree = "<group>";
+		};
 		FC35613B2354829F009D1E6D = {
 			isa = PBXGroup;
 			children = (
 				FC7BB8FD23566AED001B4268 /* src */,
+				FC33736123576629009C0856 /* FightTest */,
 				FC3561452354829F009D1E6D /* Products */,
 				FC35615423548731009D1E6D /* Frameworks */,
 			);
@@ -69,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				FC3561442354829F009D1E6D /* Clonémon */,
+				FC33736023576629009C0856 /* FightTest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,15 +136,28 @@
 		FC35615423548731009D1E6D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FC33737423583921009C0856 /* SDL2.framework */,
 				FC09683B235494BF007FBF09 /* SDL2.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FC4BD3CD23574C1600229B8E /* Fighting */ = {
+			isa = PBXGroup;
+			children = (
+				FC4BD3CE23574C1600229B8E /* fighting.c */,
+				FC33735B23576607009C0856 /* Fighting.h */,
+				FC33736823576663009C0856 /* fight-cli.c */,
+			);
+			path = Fighting;
+			sourceTree = "<group>";
+		};
 		FC7BB8FD23566AED001B4268 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				FC33736C235835BD009C0856 /* Monsters */,
 				FC7BB90023566B23001B4268 /* Player */,
+				FC4BD3CD23574C1600229B8E /* Fighting */,
 				FC7BB8FE23566AED001B4268 /* main.c */,
 			);
 			path = src;
@@ -102,6 +175,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FC33735F23576629009C0856 /* FightTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC33736423576629009C0856 /* Build configuration list for PBXNativeTarget "FightTest" */;
+			buildPhases = (
+				FC33735C23576629009C0856 /* Sources */,
+				FC33735D23576629009C0856 /* Frameworks */,
+				FC33735E23576629009C0856 /* CopyFiles */,
+				FC33737723583921009C0856 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FightTest;
+			productName = FightTest;
+			productReference = FC33736023576629009C0856 /* FightTest */;
+			productType = "com.apple.product-type.tool";
+		};
 		FC3561432354829F009D1E6D /* Clonémon */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC35614B2354829F009D1E6D /* Build configuration list for PBXNativeTarget "Clonémon" */;
@@ -129,6 +220,9 @@
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Inuk Entertainment";
 				TargetAttributes = {
+					FC33735F23576629009C0856 = {
+						CreatedOnToolsVersion = 11.0;
+					};
 					FC3561432354829F009D1E6D = {
 						CreatedOnToolsVersion = 11.0;
 					};
@@ -148,23 +242,62 @@
 			projectRoot = "";
 			targets = (
 				FC3561432354829F009D1E6D /* Clonémon */,
+				FC33735F23576629009C0856 /* FightTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FC33735C23576629009C0856 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC337370235835D4009C0856 /* Monster.c in Sources */,
+				FC33736923576663009C0856 /* fight-cli.c in Sources */,
+				FC337372235838DC009C0856 /* fighting.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FC3561402354829F009D1E6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC7BB90323566B44001B4268 /* Player.c in Sources */,
-				FC7BB8FF23566AED001B4268 /* main.c in Sources */,
+				FC33737123583806009C0856 /* main.c in Sources */,
+				FC33736F235835D4009C0856 /* Monster.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		FC33736523576629009C0856 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2D7T23VV7R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FC33736623576629009C0856 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2D7T23VV7R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		FC3561492354829F009D1E6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -203,7 +336,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -260,7 +393,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -320,6 +453,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FC33736423576629009C0856 /* Build configuration list for PBXNativeTarget "FightTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC33736523576629009C0856 /* Debug */,
+				FC33736623576629009C0856 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FC35613F2354829F009D1E6D /* Build configuration list for PBXProject "Clonémon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
