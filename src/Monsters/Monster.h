@@ -11,25 +11,37 @@
 
 #include <stdio.h>
 
-typedef struct type{
-    struct type* weak;
-    struct type* strong;
+typedef struct monsterType {
+    /** The Monster Type this  gets a lot a of damage by */
+    struct monsterType* weakAgainst;
+    /** The monster type this doesn't get dealt a lot of damage by */
+    struct monsterType* strongAgainst;
     char* name;
-} Type;
+}MonsterType;
 
 /// The attack type
 typedef struct attack{
-    Type type;
+    MonsterType type;
     int attack;
 } Attack;
 
 /// The type of the monster
-typedef struct monster{
-    Type type;
+typedef struct monsterFamily{
+    MonsterType* type;
     Attack* attacks [4];
-    int defence;
-    int hp;
+    int baseDefence;
+    int baseHP;
+    char* name;
+} MonsterFamily;
+
+typedef struct monster {
+    MonsterFamily family;
     char* name;
 } Monster;
+
+MonsterFamily tingleMon;
+
+
+
 
 #endif /* Monster_h */

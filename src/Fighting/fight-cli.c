@@ -12,15 +12,25 @@
 
 int running = 1;
 
-void game(){
+void game(Monster* you, Monster* oponent){
+    
+    
+    printf("%s\n%s\n", you->name, oponent->name);
     
 }
 
 int main(){
+    Monster you;
+    Monster oponent;
+    
+    you.family = tingleMon;
+    you.name = you.family.name;
+    
+    oponent.family = tingleMon;
+    oponent.name = oponent.family.name;
+    
     while (running) {
-        
-        game();
-        running = 0;
+        game(&you, &oponent);
     }
     return 0;
 }

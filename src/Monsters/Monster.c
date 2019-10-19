@@ -7,3 +7,7 @@
 //
 
 #include "Monster.h"
+
+MonsterType green;
+
+MonsterFamily tingleMon = {.type = &green, .baseDefence = 5, .baseHP = 5, .name = "Tinglemon"};
