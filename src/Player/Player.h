@@ -17,6 +17,7 @@
 enum PlayerNumber {one,two};
 enum PlayerDirection {up, down, still};
 
+/// Player Struct
 typedef struct player {
     SDL_Rect bat;
     enum PlayerNumber player;

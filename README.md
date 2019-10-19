@@ -1,5 +1,5 @@
 # Clonemon
-This is a clone game
+Clonémon is an Inuk Entertainment project, initially made to so Bastian could learn C.
 
 ## Contribution
 ### Coders:
