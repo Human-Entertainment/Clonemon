@@ -4,7 +4,9 @@ Clonémon is an Inuk Entertainment project, initially made to so Bastian could l
 ## Contribution
 ### Coders:
 
-- C Knowledge
+We are working with SDL, the plan is to move what little codebase we have to C++. I do want to still be able to interface with Swift and Kotlin code, so that's an interesting issue to tackle.
+
+- C(++) Knowledge
 - SDL Knowledge
 
 ### Graphics:
